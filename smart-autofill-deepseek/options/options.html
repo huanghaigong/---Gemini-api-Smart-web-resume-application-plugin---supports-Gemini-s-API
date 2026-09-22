@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>智能网申 · 设置</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-logo">智</div>
+        <div>
+          <h1>智能网申 · AI 一键填简历</h1>
+          <p class="sub">简历与密钥仅保存在本机浏览器，点击填写时才会发送给你配置的模型服务商。</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="card">
+        <h2>① 模型接口配置</h2>
+        <div class="field">
+          <label for="apiKey">DeepSeek API Key</label>
+          <input id="apiKey" type="password" placeholder="sk-..." autocomplete="off" spellcheck="false" />
+          <p class="hint">在 platform.deepseek.com 注册并创建 API Key。Key 只保存在本地 chrome.storage，不会上传到第三方。</p>
+        </div>
+        <div class="grid2">
+          <div class="field">
+            <label for="baseUrl">接口地址 Base URL</label>
+            <input id="baseUrl" type="text" spellcheck="false" placeholder="https://api.deepseek.com/v1" />
+          </div>
+          <div class="field">
+            <label for="model">模型名称</label>
+            <input id="model" type="text" spellcheck="false" placeholder="deepseek-v4-flash" />
+          </div>
+        </div>
+        <div class="grid3">
+          <div class="field">
+            <label for="maxTokens">max_tokens</label>
+            <input id="maxTokens" type="number" min="1024" step="512" />
+          </div>
+          <div class="field">
+            <label for="timeoutMs">超时（毫秒）</label>
+            <input id="timeoutMs" type="number" min="30000" step="10000" />
+          </div>
+          <div class="field">
+            <label for="temperature">temperature</label>
+            <input id="temperature" type="number" min="0" max="2" step="0.1" />
+          </div>
+        </div>
+        <div class="btn-row">
+          <button id="saveBtn" class="btn primary">保存设置</button>
+          <button id="testBtn" class="btn">测试连接</button>
+          <span id="connStatus" class="conn-status"></span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>② 我的简历</h2>
+        <p class="hint">把简历内容粘贴到下面（纯文本或 Markdown 均可），AI 会严格依据这份简历填写，不会凭空编造。内容自动保存在本地。</p>
+        <textarea id="resumeText" rows="18" placeholder="例如：&#10;姓名：张三&#10;手机：13800000000  邮箱：zhangsan@example.com&#10;教育经历：2018.09-2022.06 XX大学 计算机科学与技术 本科&#10;工作/实习经历、项目经历、技能、证书、自我评价……"></textarea>
+        <div class="btn-row">
+          <button id="saveResumeBtn" class="btn primary">保存简历</button>
+          <span id="resumeStatus" class="conn-status"></span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>③ 填写偏好</h2>
+        <div class="grid2">
+          <div class="field">
+            <label for="defaultCompany">默认公司（可选）</label>
+            <input id="defaultCompany" type="text" placeholder="留空则每次在悬浮窗填写" />
+          </div>
+          <div class="field">
+            <label for="defaultPosition">默认职位（可选）</label>
+            <input id="defaultPosition" type="text" placeholder="留空则每次在悬浮窗填写" />
+          </div>
+        </div>
+        <label class="switch-row">
+          <input id="showFab" type="checkbox" />
+          <span>在网页右下角显示悬浮球（关闭后可用扩展图标里的「立即填写本页」）</span>
+        </label>
+        <label class="switch-row">
+          <input id="overwriteFilled" type="checkbox" />
+          <span>覆盖已有内容（默认关闭，只填尚未填写的空字段）</span>
+        </label>
+        <label class="switch-row">
+          <input id="highlightFilled" type="checkbox" />
+          <span>填写后高亮被自动填充的字段</span>
+        </label>
+        <div class="btn-row">
+          <button id="savePrefBtn" class="btn primary">保存偏好</button>
+        </div>
+      </section>
+
+      <section class="card tips">
+        <h2>使用步骤</h2>
+        <ol>
+          <li>填好上方 API Key 并粘贴简历，点保存。</li>
+          <li>打开招聘网站的简历 / 网申填写页面。</li>
+          <li>点右下角悬浮球（或扩展图标 →「立即填写本页」），必要时填上公司与职位。</li>
+          <li>等待 AI 识别并自动填入，逐页（多步表单点“下一步”后）重复点击即可。</li>
+          <li>提交前请务必人工核对，尤其是身份证号、日期、下拉与单选项。</li>
+        </ol>
+      </section>
+    </main>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>

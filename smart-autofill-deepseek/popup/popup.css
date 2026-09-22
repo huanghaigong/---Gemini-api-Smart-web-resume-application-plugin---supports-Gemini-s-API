@@ -1,0 +1,52 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 13px; color: #1a1b1c; background: #fff;
+}
+.pop { width: 300px; padding: 16px; }
+.head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.logo {
+  width: 38px; height: 38px; border-radius: 10px; flex: none;
+  background: linear-gradient(135deg, #2f6bff, #5b8cff);
+  color: #fff; font-size: 19px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.name { font-size: 15px; font-weight: 700; }
+.tag { font-size: 11.5px; color: #6b7280; margin-top: 1px; }
+
+.status-box {
+  background: #f6f7f9; border: 1px solid #eceef1; border-radius: 9px;
+  padding: 9px 11px; margin-bottom: 12px;
+}
+.status-line { font-size: 12px; color: #4b5563; line-height: 1.7; }
+.status-line .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 6px; }
+.dot.ok { background: #16a34a; }
+.dot.no { background: #dc2626; }
+
+.form { margin-bottom: 10px; }
+.form label { display: block; font-size: 12px; color: #6b7280; margin: 8px 0 4px; }
+.form input {
+  width: 100%; padding: 8px 10px; border: 1px solid #e4e3dd; border-radius: 8px;
+  font-size: 13px; font-family: inherit; outline: none; background: #fbfbfc;
+}
+.form input:focus { border-color: #2f6bff; background: #fff; }
+
+.fill-btn {
+  width: 100%; padding: 11px; border: none; border-radius: 10px; cursor: pointer;
+  background: linear-gradient(135deg, #2f6bff, #4f81ff); color: #fff;
+  font-size: 14px; font-weight: 600; font-family: inherit; margin-top: 6px;
+  transition: filter .15s;
+}
+.fill-btn:hover { filter: brightness(1.05); }
+.fill-btn:disabled { opacity: .6; cursor: default; }
+.btn-icon { margin-right: 2px; }
+.msg { font-size: 12px; color: #dc2626; margin-top: 8px; min-height: 16px; text-align: center; }
+.msg.ok { color: #16a34a; }
+
+.switch-row { display: flex; align-items: center; gap: 8px; margin-top: 12px; font-size: 12.5px; color: #374151; cursor: pointer; }
+.foot { display: flex; justify-content: space-between; margin-top: 12px; padding-top: 10px; border-top: 1px solid #f0f0ee; }
+.link-btn {
+  border: none; background: none; color: #2f6bff; font-size: 12px; cursor: pointer;
+  font-family: inherit; padding: 0;
+}
+.link-btn:hover { text-decoration: underline; }
