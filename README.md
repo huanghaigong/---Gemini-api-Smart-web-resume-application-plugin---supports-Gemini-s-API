@@ -2,11 +2,12 @@
 这是一个支持chrome内核浏览器的插件，它的作用是智能填写网络建立申请，接入Gemini的免费api进行各大网站的简历申请的识别填写，可以在文本中提前写好信息进行自动填写
 
 ---
-# 如果你有Deepseek的API你也可以选择smart-autofill-deepseek版本插件进行安装
-无需部署中转，安装chrome插件后，填写API即可用
+# 如果你有Deepseek的API你也可以选择smart-autofill-deepseek版本插件进行安装，无需部署中转，安装chrome插件后，填写API即可用
+---
 # 如果你自己有代理的方法，那可以直接在smart-autofill-gemini版本插件里填写Gemini API Key里面填写申请到的Gemini API
 ---
-# 如果没有代理，建议选择smart-autofill-deepseek版本插件，如果想要免费选择smart-autofill-gemini，我们可以通过 Cloudflare 的边缘服务器进行中转 Gemini API
+# 如果没有代理，建议选择smart-autofill-deepseek版本插件，如果想要免费，选择smart-autofill-gemini，我们可以通过 Cloudflare 的边缘服务器进行中转 Gemini API
+# 部署方法如下
 
 让插件通过你自己的域名访问 Gemini，**本机不再需要开代理**。原理：请求先到 Cloudflare 边缘服务器（全球节点，能直连 Google），由 Worker 代你转发给 Gemini 官方接口。
 
