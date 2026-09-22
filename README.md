@@ -2,8 +2,9 @@
 这是一个支持chrome内核浏览器的插件，它的作用是智能填写网络建立申请，接入Gemini的免费api进行各大网站的简历申请的识别填写，可以在文本中提前写好信息进行自动填写
 
 ---
-
-# 如果你自己有代理魔法上网的方法，那可以直接在Gemini API Key里面填写申请到的Gemini API
+# 如果你有Deepseek的API你也可以选择smart-autofill-deepseek版本插件进行安装
+   无需部署中转，安装chrome插件后，填写API即可用
+# 如果你自己有代理的方法，那可以直接在Gemini API Key里面填写申请到的Gemini API
 ---
 # 如果没有代理，我们可以通过 Cloudflare 的边缘服务器进行中转 Gemini API
 
@@ -114,5 +115,4 @@ wrangler secret put RELAY_TOKEN      # 粘贴你的令牌
 wrangler deploy
 wrangler routes add api.你的域名.com/v1beta/* --zone-id 你的zoneid
 ```
-# 如果你有Deepseek的API你也可以选择smart-autofill-deepseek插件进行安装
-   无需部署中转，安装chrome插件后，填写API即可用
+
