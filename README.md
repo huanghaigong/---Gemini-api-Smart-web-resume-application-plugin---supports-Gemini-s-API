@@ -106,7 +106,7 @@ curl -X POST https://api.example.com/v1beta/models/gemini-3.6-flash:generateCont
 
 | 项目 | 直连模式（需代理） | 中转模式（免代理） |
 | :--- | :--- | :--- |
-| 接口地址 Base URL | `https://generativelanguage.googleapis.com/v1beta` | `https://api.你的域名.com/v1beta` |
+| 接口地址 Base URL | `https://generativelanguage.googleapis.com/v1beta` | `https://你的域名/v1beta` |
 | API Key | 填 Gemini Key | 模式 A：留空；模式 B：照常填 |
 | 中转令牌 | 留空 | 模式 A：填 `RELAY_TOKEN`；模式 B：留空 |
 
