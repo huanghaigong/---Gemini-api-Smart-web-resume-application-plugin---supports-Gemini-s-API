@@ -48,14 +48,14 @@
 
 ### 4. 绑定你的域名
 1. Worker 详情页 → **Settings** → **Domains & Routes** → **Add** → **Custom Domain**
-2. 输入你想用的子域名，如 `api.你的域名.com` → 点 **Activate**
+2. 输入你想用的子域名，如 `api.example.com` → 点 **Activate**
 3. Cloudflare 会自动创建 DNS 记录（CNAME），**无需手动改 DNS**
 
 ### 5. 测试中转是否通
 在电脑终端执行（把地址和令牌换成你的）：
 
 ```bash
-curl -X POST https://你的域名/v1beta/models/gemini-3.6-flash:generateContent \
+curl -X POST https://api.example.com/v1beta/models/gemini-3.6-flash:generateContent \
   -H "Content-Type: application/json" \
   -H "x-relay-token: Gh2026#relay" \
   -d '{"contents":[{"role":"user","parts":[{"text":"ping，只回复 pong"}]}],"generationConfig":{"maxOutputTokens":256}}'
