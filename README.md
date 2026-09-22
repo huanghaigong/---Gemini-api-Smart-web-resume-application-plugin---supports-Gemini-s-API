@@ -1,7 +1,6 @@
 # ---Gemini-api-Smart-web-resume-application-plugin---supports-Gemini-s-API
 这是一个支持chrome内核浏览器的插件，它的作用是智能填写网络建立申请，接入Gemini的免费api进行各大网站的简历申请的识别填写，可以在文本中提前写好信息进行自动填写
-This is a plugin that supports Chrome-based browsers. Its job is to smartly fill out online application forms, using Gemini's free API to recognize 
-and fill in resumes for various websites. You can even pre-write your info in the text for automatic filling.
+
 ---
 
 # 如果你自己有代理魔法上网的方法，那可以直接在Gemini API Key里面填写申请到的Gemini API
