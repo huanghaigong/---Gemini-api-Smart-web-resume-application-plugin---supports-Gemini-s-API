@@ -3,7 +3,7 @@
 
 ---
 # 如果你有Deepseek的API你也可以选择smart-autofill-deepseek版本插件进行安装
-   无需部署中转，安装chrome插件后，填写API即可用
+无需部署中转，安装chrome插件后，填写API即可用
 # 如果你自己有代理的方法，那可以直接在smart-autofill-gemini版本插件里填写Gemini API Key里面填写申请到的Gemini API
 ---
 # 如果没有代理，建议选择smart-autofill-deepseek版本插件，如果想要免费选择smart-autofill-gemini，我们可以通过 Cloudflare 的边缘服务器进行中转 Gemini API
