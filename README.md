@@ -55,7 +55,7 @@
 在电脑终端执行（把地址和令牌换成你的）：
 
 ```bash
-curl -X POST https://api.huanghaigong.dpdns.org/v1beta/models/gemini-3.6-flash:generateContent \
+curl -X POST https://你的域名/v1beta/models/gemini-3.6-flash:generateContent \
   -H "Content-Type: application/json" \
   -H "x-relay-token: Gh2026#relay" \
   -d '{"contents":[{"role":"user","parts":[{"text":"ping，只回复 pong"}]}],"generationConfig":{"maxOutputTokens":256}}'
