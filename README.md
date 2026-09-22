@@ -115,3 +115,4 @@ wrangler secret put RELAY_TOKEN      # 粘贴你的令牌
 wrangler deploy
 wrangler routes add api.你的域名.com/v1beta/* --zone-id 你的zoneid
 ```
+# 如果你有Deepseek的API你也可以选择smart-autofill-deepseek插件进行安装
