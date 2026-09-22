@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="pop">
+    <div class="head">
+      <div class="logo">智</div>
+      <div class="title">
+        <div class="name">智能网申</div>
+        <div class="tag">AI 一键填简历</div>
+      </div>
+    </div>
+
+    <div id="statusBox" class="status-box">
+      <div class="status-line" id="keyStatus"></div>
+      <div class="status-line" id="resumeStatus"></div>
+    </div>
+
+    <div class="form">
+      <label>公司（可选）</label>
+      <input id="company" type="text" placeholder="如：腾讯" />
+      <label>职位（可选）</label>
+      <input id="position" type="text" placeholder="如：后端开发工程师" />
+    </div>
+
+    <button id="fillBtn" class="fill-btn">
+      <span class="btn-icon">⚡</span> 立即填写本页
+    </button>
+    <div id="msg" class="msg"></div>
+
+    <label class="switch-row">
+      <input id="showFab" type="checkbox" />
+      <span>显示网页悬浮球</span>
+    </label>
+
+    <div class="foot">
+      <button id="optionsBtn" class="link-btn">设置 / 编辑简历</button>
+      <button id="reloadBtn" class="link-btn">刷新页面后生效</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

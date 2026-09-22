@@ -1,0 +1,19 @@
+# Cloudflare Worker 部署配置（可选，用 Dashboard 部署时不需要本文件）
+# 仅当你使用 wrangler CLI 部署时参考。
+
+name = "gemini-api-relay"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+# 部署后用 wrangler secret 设置（推荐）：
+#   wrangler secret put GEMINI_API_KEY
+#   wrangler secret put RELAY_TOKEN
+
+# 或者用明文变量（不推荐放 Key）：
+# [vars]
+# RELAY_TOKEN = "your-token"
+
+# 绑定自定义域名（域名需已在 Cloudflare DNS 托管）：
+# routes = [
+#   { pattern = "api.example.com/v1beta/*", zone_name = "example.com" }
+# ]
