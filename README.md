@@ -116,3 +116,4 @@ wrangler deploy
 wrangler routes add api.你的域名.com/v1beta/* --zone-id 你的zoneid
 ```
 # 如果你有Deepseek的API你也可以选择smart-autofill-deepseek插件进行安装
+##无需部署中转，安装chrome插件后，填写API即可用
