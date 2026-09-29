@@ -8,8 +8,7 @@
 ![Chrome](https://img.shields.io/badge/Chrome-MV3-green.svg)
 ![Version](https://img.shields.io/badge/version-1.4.0-orange.svg)
 
-<!-- TODO: 在此补充演示截图或 GIF，浏览器插件类项目强烈建议有一张直观演示 -->
-<!-- 示例：![演示](./docs/demo.gif) -->
+![插件设置页演示](./docs/demo.png)
 
 ---
 
